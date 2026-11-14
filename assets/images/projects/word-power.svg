@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#232522"/><stop offset=".58" stop-color="#51473a"/><stop offset="1" stop-color="#191a19"/></linearGradient>
+    <linearGradient id="light" x2="0" y2="1"><stop stop-color="#f4cb79" stop-opacity=".75"/><stop offset="1" stop-color="#f4cb79" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <path d="M50 0h210l120 400H0Z" fill="url(#light)" opacity=".55"/>
+  <path d="M413 0h160L640 400H494Z" fill="url(#light)" opacity=".28"/>
+  <path d="M0 300h640v100H0Z" fill="#121514"/>
+  <path d="M93 400V236l81-40 81 40v164m211 0V221l59-34 59 34v179" fill="#111716" stroke="#b48d51" stroke-width="4"/>
+  <path d="M121 271h104m-104 42h104m-104 42h104m313-118h77m-77 42h77m-77 42h77" stroke="#e4c990" stroke-width="4" opacity=".8"/>
+  <path d="m278 179 41-57 43 57v71h-84Z" fill="#0d1311" stroke="#b48d51" stroke-width="3"/>
+  <path d="M319 123v88" stroke="#e5c27f" stroke-width="3"/>
+  <text x="320" y="60" fill="#f5e8cb" font-family="Georgia,serif" font-size="15" letter-spacing="3" text-anchor="middle">WORD POWER</text>
+  <text x="320" y="96" fill="#fff8eb" font-family="Georgia,serif" font-size="23" font-weight="700" text-anchor="middle">A place to grow in faith</text>
+  <rect x="245" y="293" width="150" height="42" rx="21" fill="#d2a655"/>
+  <text x="320" y="320" fill="#201b13" font-family="Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle">Join our community</text>
+</svg>

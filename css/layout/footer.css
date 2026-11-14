@@ -1,0 +1,108 @@
+footer {
+    width: min(1200px, calc(100% - 32px));
+    margin: 0 auto;
+    background-color: #111;
+}
+
+.site-footer {
+    padding: 48px 16px 28px;
+    color: #bdbdbd;
+}
+
+.site-footer__container {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
+.site-footer__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    list-style: none;
+}
+
+.site-footer__nav-link {
+    color: #f0f0f0;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.site-footer__nav-link:hover,
+.site-footer__nav-link:focus-visible {
+    color: #c4b5fd;
+}
+
+.site-footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.site-footer__social-link {
+    display: grid;
+    width: 22px;
+    height: 22px;
+    place-items: center;
+    color: #9298a2;
+    transition: color 0.2s ease;
+}
+
+.site-footer__social-link:hover,
+.site-footer__social-link:focus-visible {
+    color: #fff;
+}
+
+.site-footer__social-link:focus-visible,
+.site-footer__nav-link:focus-visible {
+    outline: 2px solid #8b5cf6;
+    outline-offset: 4px;
+}
+
+.site-footer__social-icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+}
+
+.site-footer__copyright {
+    color: #929292;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 20;
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border: 1px solid rgba(221, 214, 254, 0.35);
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #a78bfa, #7c3aed);
+    box-shadow: 0 10px 28px rgba(109, 40, 217, 0.4);
+}
+
+.back-to-top:focus-visible {
+    outline: 3px solid #ffd166;
+    outline-offset: 4px;
+}
+
+.back-to-top svg {
+    width: 22px;
+    height: 22px;
+}

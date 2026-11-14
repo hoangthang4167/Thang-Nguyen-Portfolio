@@ -1,0 +1,199 @@
+.skills {
+    padding: 48px 0 0;
+}
+
+.skills__grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 0;
+    perspective: 1200px;
+}
+
+.skills__category {
+    position: relative;
+    isolation: isolate;
+    min-height: 220px;
+    padding: 26px 30px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #252525, #1b1b1b);
+    transform: perspective(1000px) rotateX(0) rotateY(0) translateY(0);
+    transform-style: preserve-3d;
+    transition:
+        transform 380ms cubic-bezier(0.2, 0.75, 0.25, 1),
+        box-shadow 380ms ease;
+}
+
+.skills__category:hover,
+.skills__category:focus-within {
+    z-index: 1;
+    box-shadow:
+        0 22px 38px rgba(0, 0, 0, 0.32),
+        0 0 28px rgba(109, 40, 217, 0.16);
+    transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) translateY(-5px);
+}
+
+.skills__category::before,
+.skills__category::after {
+    position: absolute;
+    z-index: -1;
+    width: 42px;
+    aspect-ratio: 1;
+    background: #111;
+    content: "";
+}
+
+.skills__category::before {
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.skills__category::after {
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.skills__category-title {
+    margin-bottom: 28px;
+    background: linear-gradient(90deg, #c4b5fd, #d7d9e3);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    transform: translateZ(18px);
+    -webkit-background-clip: text;
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 18px;
+    list-style: none;
+}
+
+.skills__item {
+    display: flex;
+    min-width: 0;
+    align-items: flex-start;
+    gap: 12px;
+    transform: translateZ(10px);
+    transition: transform 300ms ease;
+}
+
+.skills__category:hover .skills__item,
+.skills__category:focus-within .skills__item {
+    transform: translateZ(20px);
+}
+
+.skills__item-icon {
+    display: grid;
+    width: 22px;
+    min-width: 22px;
+    height: 24px;
+    place-items: center;
+    font-size: 0.78rem;
+    font-weight: 800;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.24));
+    transition: transform 300ms cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+
+.skills__category:hover .skills__item-icon,
+.skills__category:focus-within .skills__item-icon {
+    transform: translateZ(8px) scale(1.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skills__category,
+    .skills__item,
+    .skills__item-icon {
+        transition: none;
+    }
+
+    .skills__category:hover,
+    .skills__category:focus-within,
+    .skills__category:hover .skills__item,
+    .skills__category:focus-within .skills__item,
+    .skills__category:hover .skills__item-icon,
+    .skills__category:focus-within .skills__item-icon {
+        transform: none;
+    }
+}
+
+.skills__item-icon--html {
+    color: #f06529;
+}
+
+.skills__item-icon--javascript {
+    color: #f7df1e;
+}
+
+.skills__item-icon--typescript,
+.skills__item-icon--go {
+    color: #31a8d8;
+}
+
+.skills__item-icon--react,
+.skills__item-icon--native {
+    color: #61dafb;
+}
+
+.skills__item-icon--next {
+    border-radius: 50%;
+    background: #080808;
+    color: #fff;
+}
+
+.skills__item-icon--vite {
+    color: #8b70ff;
+}
+
+.skills__item-icon--nestjs {
+    color: #e0234e;
+}
+
+.skills__item-icon--postgres {
+    color: #6795cb;
+}
+
+.skills__item-icon--firebase {
+    color: #ffca28;
+}
+
+.skills__item-icon--tailwind {
+    color: #38bdf8;
+    font-size: 1.6rem;
+}
+
+.skills__item-icon--redux {
+    color: #9b59d0;
+}
+
+.skills__item-icon--zustand {
+    color: #d6a17d;
+}
+
+.skills__item-icon--css {
+    color: #4aa5e8;
+    font-size: 0.65rem;
+}
+
+.skills__item-info {
+    display: grid;
+    gap: 4px;
+}
+
+.skills__item-name {
+    color: #f1f1f1;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.skills__item-level {
+    color: #d2d2d2;
+    font-size: 0.8rem;
+}

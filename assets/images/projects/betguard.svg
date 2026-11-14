@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#08101f"/><stop offset="1" stop-color="#101c33"/></linearGradient>
+    <linearGradient id="blue"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <circle cx="520" cy="80" r="130" fill="#2563eb" opacity=".12"/>
+  <rect x="34" y="34" width="572" height="332" rx="18" fill="#0b1220" stroke="#28364d"/>
+  <path d="M34 88h572" stroke="#28364d"/>
+  <circle cx="62" cy="61" r="9" fill="#22d3ee"/>
+  <text x="84" y="68" fill="#eaf4ff" font-family="Arial,sans-serif" font-size="21" font-weight="700">BetGuard</text>
+  <rect x="510" y="50" width="70" height="23" rx="11" fill="#123d49"/>
+  <text x="524" y="66" fill="#5eead4" font-family="Arial,sans-serif" font-size="11">SAFE MODE</text>
+  <text x="62" y="127" fill="#8da0ba" font-family="Arial,sans-serif" font-size="13">WEEKLY ACTIVITY</text>
+  <text x="62" y="165" fill="#fff" font-family="Arial,sans-serif" font-size="31" font-weight="700">$248.50</text>
+  <text x="62" y="188" fill="#6ee7b7" font-family="Arial,sans-serif" font-size="13">↓ 12% from last week</text>
+  <rect x="62" y="218" width="330" height="104" rx="12" fill="#111c2c"/>
+  <path d="M80 292 122 270l42 15 43-42 43 23 43-38 43 19 39-35" fill="none" stroke="url(#blue)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M80 302h312M80 278h312M80 254h312" stroke="#28364d" stroke-dasharray="4 7"/>
+  <rect x="416" y="111" width="158" height="96" rx="12" fill="#111c2c"/>
+  <text x="434" y="140" fill="#8da0ba" font-family="Arial,sans-serif" font-size="12">MONTHLY LIMIT</text>
+  <text x="434" y="173" fill="#fff" font-family="Arial,sans-serif" font-size="24" font-weight="700">$1,000</text>
+  <rect x="434" y="185" width="120" height="6" rx="3" fill="#26354a"/>
+  <rect x="434" y="185" width="48" height="6" rx="3" fill="#22d3ee"/>
+  <rect x="416" y="222" width="158" height="100" rx="12" fill="#111c2c"/>
+  <text x="434" y="251" fill="#8da0ba" font-family="Arial,sans-serif" font-size="12">SAFETY CHECK</text>
+  <circle cx="450" cy="281" r="10" fill="#34d399"/>
+  <path d="m445 281 4 4 7-8" fill="none" stroke="#052e27" stroke-width="2.5"/>
+  <text x="468" y="286" fill="#d6e3f3" font-family="Arial,sans-serif" font-size="13">All good</text>
+</svg>

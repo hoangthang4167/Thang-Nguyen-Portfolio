@@ -1,0 +1,9 @@
+@import url("./base.css");
+@import url("./layout/header.css");
+@import url("./sections/hero-about.css");
+@import url("./sections/services.css");
+@import url("./sections/skills.css");
+@import url("./sections/projects.css");
+@import url("./sections/testimonials.css");
+@import url("./sections/contact.css");
+@import url("./layout/footer.css");

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    color-scheme: dark;
+    scrollbar-color: #7c3aed #171717;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #171717;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 3px solid #171717;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #a78bfa, #6d28d9);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #c4b5fd, #8b5cf6);
+}
+
+
+main {
+    width: min(1200px, calc(100% - 32px));
+    margin: 0 auto;
+    background-color: #111;
+}
+
+.services__title,
+.skills__title,
+.projects__title,
+.testimonials__title {
+    width: fit-content;
+    margin: 0 auto 32px;
+    color: #c4b5fd;
+    background: linear-gradient(
+        110deg,
+        #a78bfa 0%,
+        #c4b5fd 35%,
+        #fff 50%,
+        #c4b5fd 65%,
+        #a78bfa 100%
+    );
+    background-size: 220% 100%;
+    background-position: 100% 0;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(1.55rem, 2.4vw, 1.9rem);
+    font-weight: 750;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    text-align: center;
+    animation: section-heading-reflection 5s ease-in-out infinite;
+}
+
+@keyframes section-heading-reflection {
+    0%,
+    18% {
+        background-position: 100% 0;
+    }
+
+    82%,
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .services__title,
+    .skills__title,
+    .projects__title,
+    .testimonials__title {
+        animation: none;
+        background-position: 50% 0;
+    }
+}

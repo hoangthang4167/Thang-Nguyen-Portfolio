@@ -1,0 +1,728 @@
+﻿<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thang Nguyen Portfolio</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon.png?v=2">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-header__title">
+            <a href="#top" class="site-header__brand">My Portfolio</a>
+        </div>
+        <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+            <ul class="site-nav__list">
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#about">About</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#services">Services</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#skills">Skills</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#projects">Projects</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#contact" class="site-header__cta" title="Hire Me">
+            <span class="site-header__cta-label">Hire Me</span>
+            <span class="site-header__cta-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                    <path d="M14 4h6v6m-11 5L20 4M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </span>
+        </a>
+        <button class="site-header__menu-toggle" type="button" aria-label="Open navigation menu"
+            aria-controls="primary-navigation" aria-expanded="false">
+            <svg class="site-header__menu-icon site-header__menu-icon--open" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" />
+            </svg>
+            <svg class="site-header__menu-icon site-header__menu-icon--close" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" />
+            </svg>
+        </button>
+    </header>
+    <main id="main-content">
+    <section class="hero" id="hero">
+        <div class="hero__title">
+            <h1 aria-label="Front-End Development, Responsive Design, Web Applications and Animations.">
+                <span aria-hidden="true">Front-End Development,<br>Responsive Design,</span>
+                <span class="hero__typing-line" aria-hidden="true">Web <span
+                        class="hero__typing-word">Application</span></span>
+            </h1>
+        </div>
+        <figure class="hero__media">
+            <img src="assets/images/personal_img.png" alt="avatar_personal" class="hero__image">
+        </figure>
+    </section>
+    <section class="about" id="about">
+        <div class="about__container">
+            <div class="about__code-card">
+                <div class="about__code-toolbar" aria-hidden="true">
+                    <span class="about__code-dot about__code-dot--close"></span>
+                    <span class="about__code-dot about__code-dot--minimize"></span>
+                    <span class="about__code-dot about__code-dot--maximize"></span>
+                    <span class="about__code-filename">developer.js</span>
+                </div>
+                <pre class="about__code"><code><span class="about__code-keyword">const</span> developer = {
+  firstName: <span class="about__code-string">"Thang"</span>,
+  lastName: <span class="about__code-string">"Nguyen"</span>,
+  role: <span class="about__code-string">"Software Engineer"</span>,
+  hobby: () =&gt; {
+    <span class="about__code-comment">// code();</span>
+    <span class="about__code-comment">// learn();</span>
+    <span class="about__code-comment">// repeat();</span>
+  }
+};</code></pre>
+            </div>
+            <div class="about__content">
+                <h2 class="about__title">A little about my work</h2>
+                <p class="about__description">I build user-focused full-stack products, bringing thoughtful interfaces
+                    and reliable back-end systems together. My work spans React, Next.js, NestJS, and Go, with a focus
+                    on clear UX, maintainable code, and dependable delivery.</p>
+                <div class="about__stats">
+                    <div class="about__stat-item">
+                        <span class="about__stat-value">5+</span>
+                        <span class="about__stat-label">Years Experience</span>
+                    </div>
+                    <div class="about__stat-item">
+                        <span class="about__stat-value">4+</span>
+                        <span class="about__stat-label">Completed Projects</span>
+                    </div>
+                    <div class="about__stat-item">
+                        <span class="about__stat-value">11+</span>
+                        <span class="about__stat-label">Satisfied Clients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="profile">
+        <h2 class="profile__title">About Me</h2>
+        <h3 class="profile__name"><span>I am</span> Thang Nguyen</h3>
+        <p class="profile__description">Full-stack software engineer building complete products end to end —
+            responsive,
+            high-performance frontends with React, Next.js, and TypeScript, paired with backends in NestJS and
+            Go on PostgreSQL. I've shipped platforms across fintech, government revenue collection, ed-tech,
+            real estate, and responsible-gambling compliance, owning everything from UI/UX and API design to
+            deployment. Strong attention to detail, clean and scalable code, and a proven track record of
+            delivering reliable, high-quality projects on time.
+        </p>
+    </section>
+    <section class="services" id="services">
+        <h2 class="services__title">Services</h2>
+        <div class="services__container">
+            <article class="services__card">
+                <span class="services__icon services__icon--frontend" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M8 7.5 4 12l4 4.5M16 7.5l4 4.5-4 4.5M13.5 5l-3 14" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+                <h3 class="services__card-title">Frontend Development</h3>
+                <p class="services__card-description">
+                    Turning designs into responsive, accessible interfaces with React, Next.js, and TypeScript —
+                    from UI/UX and layout decisions to smooth, high-performance experiences across desktop, tablet,
+                    and mobile.
+                </p>
+                <ul class="services__social-links">
+                    <li class="services__social-item">
+                        <a class="services__social-link" href="#" aria-label="GitHub">
+                            <svg class="services__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor"
+                                    d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.06 1.15a10.62 10.62 0 0 1 5.57 0c2.12-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.12 2.96.72.78 1.14 1.78 1.14 3.01 0 4.29-2.61 5.23-5.1 5.5.4.35.75 1.03.75 2.08v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="services__social-item">
+                        <a class="services__social-link" href="#" aria-label="LinkedIn">
+                            <svg class="services__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor"
+                                    d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.9H4.96V9.34h2.97v9.56ZM6.45 8.03a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm12.46 10.87h-2.97v-4.65c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.63V9.34h2.85v1.3h.04c.4-.75 1.37-1.54 2.82-1.54 3.01 0 3.57 1.98 3.57 4.55v5.25Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="services__card">
+                <span class="services__icon services__icon--backend" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <rect x="4" y="4" width="16" height="6" rx="1.5" stroke="currentColor" stroke-width="2" />
+                        <rect x="4" y="14" width="16" height="6" rx="1.5" stroke="currentColor" stroke-width="2" />
+                        <path d="M7.5 7h.01M7.5 17h.01M11 7h6M11 17h6" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </span>
+                <h3 class="services__card-title">Backend Development</h3>
+                <p class="services__card-description">
+                    Designing and building APIs, auth, and data layers with NestJS and Go, backed by PostgreSQL —
+                    handling everything from payments and permissions to audit trails and business logic.
+                </p>
+                <ul class="services__social-links">
+                    <li class="services__social-item">
+                        <a class="services__social-link" href="#" aria-label="GitHub">
+                            <svg class="services__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor"
+                                    d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.06 1.15a10.62 10.62 0 0 1 5.57 0c2.12-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.12 2.96.72.78 1.14 1.78 1.14 3.01 0 4.29-2.61 5.23-5.1 5.5.4.35.75 1.03.75 2.08v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="services__social-item">
+                        <a class="services__social-link" href="#" aria-label="LinkedIn">
+                            <svg class="services__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor"
+                                    d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.9H4.96V9.34h2.97v9.56ZM6.45 8.03a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm12.46 10.87h-2.97v-4.65c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.63V9.34h2.85v1.3h.04c.4-.75 1.37-1.54 2.82-1.54 3.01 0 3.57 1.98 3.57 4.55v5.25Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="services__card">
+                <span class="services__icon services__icon--fullstack" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="m12 3 9 4.5-9 4.5-9-4.5L12 3Z" stroke="currentColor" stroke-width="2"
+                            stroke-linejoin="round" />
+                        <path d="m3 12 9 4.5 9-4.5M3 16.5 12 21l9-4.5" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+                <h3 class="services__card-title">Full-Stack Product Development</h3>
+                <p class="services__card-description">
+                    Owning a product end to end — frontend, backend, database, and deployment — to ship complete,
+                    reliable platforms for fintech, government, ed-tech, and real-estate clients.
+                </p>
+                <ul class="services__social-links">
+                    <li class="services__social-item">
+                        <a class="services__social-link" href="#" aria-label="GitHub">
+                            <svg class="services__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor"
+                                    d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.06 1.15a10.62 10.62 0 0 1 5.57 0c2.12-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.12 2.96.72.78 1.14 1.78 1.14 3.01 0 4.29-2.61 5.23-5.1 5.5.4.35.75 1.03.75 2.08v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="services__social-item">
+                        <a class="services__social-link" href="#" aria-label="LinkedIn">
+                            <svg class="services__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor"
+                                    d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.9H4.96V9.34h2.97v9.56ZM6.45 8.03a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm12.46 10.87h-2.97v-4.65c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.63V9.34h2.85v1.3h.04c.4-.75 1.37-1.54 2.82-1.54 3.01 0 3.57 1.98 3.57 4.55v5.25Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="skills__title">My Skills</h2>
+        <div class="skills__grid">
+            <div class="skills__category">
+                <h3 class="skills__category-title">Frontend Development</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--html" aria-hidden="true">5</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">HTML</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--javascript" aria-hidden="true">JS</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">JavaScript</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--typescript" aria-hidden="true">TS</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">TypeScript</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--react" aria-hidden="true">R</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">React</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--next" aria-hidden="true">N</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">Next.js</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--native" aria-hidden="true">RN</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">React Native</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--vite" aria-hidden="true">V</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">Vite</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skills__category">
+                <h3 class="skills__category-title">Backend &amp; Databases</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--nestjs" aria-hidden="true">N</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">NestJS</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--go" aria-hidden="true">GO</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">Go</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--postgres" aria-hidden="true">PG</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">PostgreSQL</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--firebase" aria-hidden="true">F</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">Firebase</span>
+                            <span class="skills__item-level">Intermediate</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skills__category">
+                <h3 class="skills__category-title">Styling &amp; State Management</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--tailwind" aria-hidden="true">~</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">Tailwind</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--redux" aria-hidden="true">R</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">Redux Toolkit</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--zustand" aria-hidden="true">Z</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">Zustand</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <span class="skills__item-icon skills__item-icon--css" aria-hidden="true">CSS</span>
+                        <div class="skills__item-info">
+                            <span class="skills__item-name">CSS</span>
+                            <span class="skills__item-level">Experienced</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="projects__title">My Projects</h2>
+        <div class="projects__grid">
+            <article class="project-card">
+                <div class="project-card__media">
+                    <img src="assets/images/projects/betguard.svg" alt="Demo preview of the BetGuard dashboard"
+                        class="project-card__img">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">BetGuard</h3>
+                    <p class="project-card__type">Web App</p>
+                    <p class="project-card__desc">A responsible-gambling platform for tracking activity and
+                        encouraging safer betting habits.</p>
+                    <a href="#projects" class="project-card__link">View project <span aria-hidden="true">→</span></a>
+                    <ul class="project-card__technologies" aria-label="Project technologies">
+                        <li class="project-card__technology">React</li>
+                        <li class="project-card__technology">TypeScript</li>
+                        <li class="project-card__technology">Go</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-card__media">
+                    <img src="assets/images/projects/dgex.svg" alt="Demo preview of the DGEX property platform"
+                        class="project-card__img">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">D'GEX</h3>
+                    <p class="project-card__type">Web</p>
+                    <p class="project-card__desc">A modern property platform connecting people with places and
+                        real-estate opportunities.</p>
+                    <a href="#projects" class="project-card__link">View project <span aria-hidden="true">→</span></a>
+                    <ul class="project-card__technologies" aria-label="Project technologies">
+                        <li class="project-card__technology">Next.js</li>
+                        <li class="project-card__technology">TypeScript</li>
+                        <li class="project-card__technology">PostgreSQL</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-card__media">
+                    <img src="assets/images/projects/fintech-phase-2.svg" alt="Demo preview of the Fintech Phase 2 dashboard"
+                        class="project-card__img">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Fintech Phase 2</h3>
+                    <p class="project-card__type">Fintech Platform</p>
+                    <p class="project-card__desc">A financial services dashboard concept for managing accounts,
+                        transactions, and business insights.</p>
+                    <a href="#projects" class="project-card__link">View project <span aria-hidden="true">→</span></a>
+                    <ul class="project-card__technologies" aria-label="Project technologies">
+                        <li class="project-card__technology">React</li>
+                        <li class="project-card__technology">NestJS</li>
+                        <li class="project-card__technology">Go</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-card__media">
+                    <img src="assets/images/projects/genesys-academy.svg" alt="Demo preview of Genesys Academy"
+                        class="project-card__img">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Genesys Academy</h3>
+                    <p class="project-card__type">Education</p>
+                    <p class="project-card__desc">An online learning experience for discovering courses and
+                        supporting student progress.</p>
+                    <a href="#projects" class="project-card__link">View project <span aria-hidden="true">→</span></a>
+                    <ul class="project-card__technologies" aria-label="Project technologies">
+                        <li class="project-card__technology">Next.js</li>
+                        <li class="project-card__technology">React</li>
+                        <li class="project-card__technology">CSS</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-card__media">
+                    <img src="assets/images/projects/luminary-techlift.svg" alt="Demo preview of Luminary Techlift"
+                        class="project-card__img">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Luminary Techlift</h3>
+                    <p class="project-card__type">Technology</p>
+                    <p class="project-card__desc">A polished digital presence for a technology team, highlighting
+                        its services and work.</p>
+                    <a href="#projects" class="project-card__link">View project <span aria-hidden="true">→</span></a>
+                    <ul class="project-card__technologies" aria-label="Project technologies">
+                        <li class="project-card__technology">React</li>
+                        <li class="project-card__technology">TypeScript</li>
+                        <li class="project-card__technology">Tailwind</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-card__media">
+                    <img src="assets/images/projects/word-power.svg" alt="Demo preview of Word Power Christian Outreach"
+                        class="project-card__img">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Word Power Christian Outreach</h3>
+                    <p class="project-card__type">Community</p>
+                    <p class="project-card__desc">A welcoming community website sharing ministry information,
+                        events, and resources.</p>
+                    <a href="#projects" class="project-card__link">View project <span aria-hidden="true">→</span></a>
+                    <ul class="project-card__technologies" aria-label="Project technologies">
+                        <li class="project-card__technology">Next.js</li>
+                        <li class="project-card__technology">CSS</li>
+                        <li class="project-card__technology">Web</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-card__media">
+                    <img src="assets/images/projects/brydge.svg" alt="Demo preview of the Brydge fintech web app"
+                        class="project-card__img">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Brydge — Fintech Web App</h3>
+                    <p class="project-card__type">Fintech</p>
+                    <p class="project-card__desc">A fintech product concept bringing account and payment
+                        experiences together in one place.</p>
+                    <a href="#projects" class="project-card__link">View project <span aria-hidden="true">→</span></a>
+                    <ul class="project-card__technologies" aria-label="Project technologies">
+                        <li class="project-card__technology">React</li>
+                        <li class="project-card__technology">Go</li>
+                        <li class="project-card__technology">PostgreSQL</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-card__media">
+                    <img src="assets/images/projects/focus-grid.svg" alt="Demo preview of Focus Grid"
+                        class="project-card__img">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Focus Grid</h3>
+                    <p class="project-card__type">Productivity</p>
+                    <p class="project-card__desc">A productivity tool concept for organizing work, setting
+                        priorities, and staying focused.</p>
+                    <a href="#projects" class="project-card__link">View project <span aria-hidden="true">→</span></a>
+                    <ul class="project-card__technologies" aria-label="Project technologies">
+                        <li class="project-card__technology">React</li>
+                        <li class="project-card__technology">TypeScript</li>
+                        <li class="project-card__technology">CSS</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+        <h2 class="testimonials__title">Testimonials</h2>
+        <div class="testimonials__viewport" role="region" aria-label="Client testimonials" tabindex="0">
+            <div class="testimonials__list">
+            <article class="testimonial">
+                <img class="testimonial__avatar" src="assets/images/testimonials/client-1.svg"
+                    alt="Demo portrait for Samuel Eze">
+                <h3 class="testimonial__name">Samuel Eze</h3>
+                <p class="testimonial__role">Client · Sample testimonial</p>
+                <blockquote class="testimonial__quote">
+                    “The team turned our idea into a polished, easy-to-use website. Communication was clear
+                    throughout, and every detail was handled with care.”
+                </blockquote>
+            </article>
+            <article class="testimonial">
+                <img class="testimonial__avatar" src="assets/images/testimonials/client-2.svg"
+                    alt="Demo portrait for Emmanuel Joseph">
+                <h3 class="testimonial__name">Emmanuel Joseph</h3>
+                <p class="testimonial__role">Client · Sample testimonial</p>
+                <blockquote class="testimonial__quote">
+                    “The finished product fit our goals perfectly. The process felt collaborative, and the result
+                    gave our online presence a much-needed lift.”
+                </blockquote>
+            </article>
+            <article class="testimonial">
+                <img class="testimonial__avatar" src="assets/images/testimonials/client-3.svg"
+                    alt="Demo portrait for Maya Tran">
+                <h3 class="testimonial__name">Maya Tran</h3>
+                <p class="testimonial__role">Client · Sample testimonial</p>
+                <blockquote class="testimonial__quote">
+                    “Thoughtful design and reliable delivery made this project a great experience. I appreciated
+                    the attention to detail from the first draft to launch.”
+                </blockquote>
+            </article>
+            <article class="testimonial">
+                <img class="testimonial__avatar" src="assets/images/testimonials/client-4.svg"
+                    alt="Demo portrait for Daniel Park">
+                <h3 class="testimonial__name">Daniel Park</h3>
+                <p class="testimonial__role">Client · Sample testimonial</p>
+                <blockquote class="testimonial__quote">
+                    “A complex set of requirements became a clean, straightforward product. Updates were timely,
+                    and the final result was easy for our team to use.”
+                </blockquote>
+            </article>
+            <article class="testimonial">
+                <img class="testimonial__avatar" src="assets/images/testimonials/client-5.svg"
+                    alt="Demo portrait for Alex Morgan">
+                <h3 class="testimonial__name">Alex Morgan</h3>
+                <p class="testimonial__role">Client · Sample testimonial</p>
+                <blockquote class="testimonial__quote">
+                    “From planning through delivery, everything felt organized and considered. The new experience
+                    is fast, clear, and a pleasure to use.”
+                </blockquote>
+            </article>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact__container">
+            <div class="contact__info">
+                <h2 class="contact__title">Let's talk on your <span>great project</span> together</h2>
+                <address class="contact__methods">
+                    <div class="contact-method">
+                        <div class="contact-method__details">
+                            <div class="contact-method__detail">
+                                <span class="contact-method__identity-icon contact-method__identity-icon--email"
+                                    aria-hidden="true">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 5h18v14H3zM3 6l9 7 9-7" fill="none" stroke="currentColor"
+                                            stroke-width="1.8" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <h3 class="contact-method__name">Email</h3>
+                                    <a href="mailto:your-email@example.com"
+                                        class="contact-method__value">your-email@example.com</a>
+                                </div>
+                            </div>
+                            <a class="contact-method__action" href="mailto:your-email@example.com">
+                                <span class="contact-method__icon contact-method__icon--email" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 5h18v14H3zM3 6l9 7 9-7" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span>Message</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-method__details">
+                            <div class="contact-method__detail">
+                                <span class="contact-method__identity-icon contact-method__identity-icon--phone"
+                                    aria-hidden="true">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M7.2 3.5 4.5 5.2c-.8.5-.9 1.6-.6 2.5 1.8 5.4 6 9.6 11.4 11.4.9.3 2 .2 2.5-.6l1.7-2.7-4.3-2.1-1.6 2a14.6 14.6 0 0 1-5.8-5.8l2-1.6-2.6-4.8Z"
+                                            fill="none" stroke="currentColor" stroke-width="1.8"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <h3 class="contact-method__name">WhatsApp</h3>
+                                    <a href="https://wa.me/84352298920" class="contact-method__value">+84 352298920</a>
+                                </div>
+                            </div>
+                            <a class="contact-method__action" href="https://wa.me/84352298920">
+                                <span class="contact-method__icon contact-method__icon--whatsapp" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M20 11.7a8 8 0 0 1-11.8 7l-4.2 1.1 1.1-4.1A8 8 0 1 1 20 11.7Z"
+                                            fill="none" stroke="currentColor" stroke-width="1.8"
+                                            stroke-linejoin="round" />
+                                        <path d="M9 8.3c.4-.4.8-.2 1 .2l.7 1.4c.2.3.1.6-.2.9l-.5.5c.6 1.1 1.4 1.9 2.6 2.5l.5-.6c.2-.3.6-.4.9-.2l1.3.7c.4.2.5.6.3 1-.3.6-.9 1-1.6 1-2.8-.2-5.8-3.1-6-5.9 0-.6.4-1.2 1-1.5Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </span>
+                                <span>Phone</span>
+                            </a>
+                        </div>
+                    </div>
+                </address>
+                <nav class="contact-socials" aria-label="Social media links">
+                    <ul class="contact-socials__list">
+                        <li class="contact-socials__item">
+                            <a href="#" class="contact-socials__link" aria-label="GitHub">
+                                <svg class="contact-socials__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill="currentColor"
+                                        d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.06 1.15a10.62 10.62 0 0 1 5.57 0c2.12-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.12 2.96.72.78 1.14 1.78 1.14 3.01 0 4.29-2.61 5.23-5.1 5.5.4.35.75 1.03.75 2.08v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contact-socials__item">
+                            <a href="#" class="contact-socials__link" aria-label="LinkedIn">
+                                <svg class="contact-socials__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill="currentColor"
+                                        d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.9H4.96V9.34h2.97v9.56ZM6.45 8.03a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm12.46 10.87h-2.97v-4.65c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.63V9.34h2.85v1.3h.04c.4-.75 1.37-1.54 2.82-1.54 3.01 0 3.57 1.98 3.57 4.55v5.25Z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <form action="#" class="contact-form">
+                <div class="contact-form__group">
+                    <label for="full-name" class="contact-form__label">Your full name</label>
+                    <input class="contact-form__control" type="text" id="full-name" placeholder="Your full name"
+                        required>
+                </div>
+                <div class="contact-form__group">
+                    <label for="email" class="contact-form__label">Your Email</label>
+                    <input class="contact-form__control" type="email" id="email" placeholder="Your email" required>
+                </div>
+                <div class="contact-form__group">
+                    <label for="message" class="contact-form__label">Message</label>
+                    <textarea class="contact-form__control" name="message" id="message"
+                        placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="contact-form__submit">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="m22 2-7 20-4-9-9-4 20-7ZM22 2 11 13" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Send Now
+                </button>
+            </form>
+        </div>
+    </section>
+    </main>
+    <footer class="site-footer">
+        <div class="site-footer__container">
+            <nav class="site-footer__nav" aria-label="Footer navigation">
+                <ul class="site-footer__nav-list">
+                    <li class="site-footer__nav-item">
+                        <a href="#about" class="site-footer__nav-link">About</a>
+                    </li>
+                    <li class="site-footer__nav-item">
+                        <a href="#services" class="site-footer__nav-link">Services</a>
+                    </li>
+                    <li class="site-footer__nav-item">
+                        <a href="#skills" class="site-footer__nav-link">Skills</a>
+                    </li>
+                    <li class="site-footer__nav-item">
+                        <a href="#projects" class="site-footer__nav-link">Projects</a>
+                    </li>
+                    <li class="site-footer__nav-item">
+                        <a href="#testimonials" class="site-footer__nav-link">Testimonials</a>
+                    </li>
+                    <li class="site-footer__nav-item">
+                        <a href="#contact" class="site-footer__nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="site-footer__socials" aria-label="Social media links">
+                <a href="#" class="site-footer__social-link" aria-label="GitHub">
+                    <svg class="site-footer__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.06 1.15a10.62 10.62 0 0 1 5.57 0c2.12-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.12 2.96.72.78 1.14 1.78 1.14 3.01 0 4.29-2.61 5.23-5.1 5.5.4.35.75 1.03.75 2.08v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z" />
+                    </svg>
+                </a>
+                <a href="#" class="site-footer__social-link" aria-label="LinkedIn">
+                    <svg class="site-footer__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.9H4.96V9.34h2.97v9.56ZM6.45 8.03a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm12.46 10.87h-2.97v-4.65c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.63V9.34h2.85v1.3h.04c.4-.75 1.37-1.54 2.82-1.54 3.01 0 3.57 1.98 3.57 4.55v5.25Z" />
+                    </svg>
+                </a>
+            </nav>
+            <p class="site-footer__copyright">
+                © 2026 Thang Nguyen. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Back to top" title="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 19V5m-7 7 7-7 7 7" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </a>
+    <script src="js/hero-typing.js" defer></script>
+    <script src="js/testimonials-carousel.js" defer></script>
+    <script src="js/header-menu.js" defer></script>
+</body>
+
+</html>
