@@ -305,6 +305,46 @@ textarea.contact-form__control {
     height: 18px;
 }
 
+@media (max-width: 640px) {
+    .contact {
+        padding-top: 36px;
+    }
+
+    .contact__container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        padding: 24px 20px;
+    }
+
+    .contact__info {
+        padding: 0;
+    }
+
+    .contact__title {
+        margin-bottom: 24px;
+        font-size: clamp(1.5rem, 6vw, 1.8rem);
+    }
+
+    .contact-method__details {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .contact-method__action {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .contact-socials {
+        margin-top: 24px;
+    }
+
+    .contact-form {
+        gap: 16px;
+        padding: 20px 16px;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     .contact__title,
     .contact-method__value {
