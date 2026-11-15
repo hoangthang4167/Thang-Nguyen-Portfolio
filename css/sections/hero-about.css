@@ -122,10 +122,9 @@
 
 @media (max-width: 640px) {
     .hero {
-        width: 100vw;
         height: calc(100vh - 80px);
         height: calc(100svh - 80px);
-        margin-left: calc(50% - 50vw);
+        margin-inline: -16px;
         grid-template-columns: minmax(0, 1fr);
         align-items: start;
     }

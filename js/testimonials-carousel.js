@@ -122,7 +122,7 @@ if (carouselViewport) {
                             startTime = time;
                         }
 
-                        const progress = Math.min((time - startTime) / 2500, 1);
+                        const progress = Math.min((time - startTime) / 3000, 1);
                         const easedProgress = progress < 0.5
                             ? 4 * progress ** 3
                             : 1 - ((-2 * progress + 2) ** 3) / 2;
@@ -152,6 +152,13 @@ if (carouselViewport) {
 
         const pauseForInteraction = () => {
             clearAutoplay();
+
+            if (animationFrame) {
+                window.cancelAnimationFrame(animationFrame);
+                animationFrame = 0;
+            }
+
+            carouselViewport.classList.remove("is-settling");
         };
 
         const resumeAfterInteraction = () => {
