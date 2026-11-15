@@ -197,3 +197,68 @@
     color: #d2d2d2;
     font-size: 0.8rem;
 }
+
+@media (max-width: 640px) {
+    .skills {
+        padding-top: 36px;
+    }
+
+    .skills__grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        perspective: none;
+    }
+
+    .skills__category {
+        min-height: 0;
+        padding: 26px 22px;
+        border-radius: 20px;
+        background: linear-gradient(145deg, #252733, #191d27);
+    }
+
+    .skills__category-title {
+        margin-bottom: 24px;
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        font-size: clamp(1.65rem, 7vw, 2rem);
+        font-weight: 750;
+        letter-spacing: -0.035em;
+        text-align: left;
+        transform: none;
+    }
+
+    .skills__list {
+        gap: 20px 14px;
+    }
+
+    .skills__item {
+        gap: 10px;
+        transform: none;
+    }
+
+    .skills__item-icon {
+        width: 24px;
+        min-width: 24px;
+        font-size: 0.85rem;
+    }
+
+    .skills__item-name {
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+
+    .skills__item-level {
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .skills__category {
+        padding-inline: 18px;
+    }
+
+    .skills__list {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+}

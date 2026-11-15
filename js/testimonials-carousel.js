@@ -26,14 +26,22 @@ if (carouselViewport) {
         carouselList.append(trailingClones);
 
         const firstOriginal = carouselList.children[originalCards.length * cloneCount];
+        const mobileViewer = window.matchMedia("(max-width: 640px)");
+        const getCardScrollPosition = (card) => {
+            const viewportRect = carouselViewport.getBoundingClientRect();
+            const cardRect = card.getBoundingClientRect();
+            const centerOffset = mobileViewer.matches
+                ? (carouselViewport.clientWidth - cardRect.width) / 2
+                : 0;
+
+            return carouselViewport.scrollLeft + cardRect.left - viewportRect.left - centerOffset;
+        };
         let originalStart = 0;
         let loopDistance = 0;
 
         const measureLoop = () => {
             const nextCopy = carouselList.children[originalCards.length * (cloneCount + 1)];
-            const viewportRect = carouselViewport.getBoundingClientRect();
-            originalStart = firstOriginal.getBoundingClientRect().left - viewportRect.left +
-                carouselViewport.scrollLeft;
+            originalStart = getCardScrollPosition(firstOriginal);
             loopDistance = nextCopy.getBoundingClientRect().left -
                 firstOriginal.getBoundingClientRect().left;
             carouselViewport.scrollLeft = originalStart;
@@ -82,13 +90,11 @@ if (carouselViewport) {
             }
 
             autoplayTimer = window.setTimeout(() => {
-                const viewportLeft = carouselViewport.getBoundingClientRect().left;
                 let nearestIndex = 0;
                 let nearestDistance = Number.POSITIVE_INFINITY;
 
                 Array.from(carouselList.children).forEach((card, index) => {
-                    const cardScroll = carouselViewport.scrollLeft +
-                        card.getBoundingClientRect().left - viewportLeft;
+                    const cardScroll = getCardScrollPosition(card);
                     const distance = Math.abs(cardScroll - carouselViewport.scrollLeft);
 
                     if (distance < nearestDistance) {
@@ -103,12 +109,42 @@ if (carouselViewport) {
                     return;
                 }
 
-                const nextScroll = carouselViewport.scrollLeft +
-                    nextCard.getBoundingClientRect().left - viewportLeft;
+                const nextScroll = getCardScrollPosition(nextCard);
+
+                if (mobileViewer.matches && !reduceMotion.matches) {
+                    const startScroll = carouselViewport.scrollLeft;
+                    const distance = nextScroll - startScroll;
+                    let startTime = 0;
+                    carouselViewport.classList.add("is-settling");
+
+                    const animateMobileScroll = (time) => {
+                        if (!startTime) {
+                            startTime = time;
+                        }
+
+                        const progress = Math.min((time - startTime) / 2500, 1);
+                        const easedProgress = progress < 0.5
+                            ? 4 * progress ** 3
+                            : 1 - ((-2 * progress + 2) ** 3) / 2;
+
+                        carouselViewport.scrollLeft = startScroll + distance * easedProgress;
+
+                        if (progress < 1) {
+                            animationFrame = window.requestAnimationFrame(animateMobileScroll);
+                        } else {
+                            animationFrame = 0;
+                            carouselViewport.classList.remove("is-settling");
+                            scheduleAutoplay();
+                        }
+                    };
+
+                    animationFrame = window.requestAnimationFrame(animateMobileScroll);
+                    return;
+                }
 
                 carouselViewport.scrollTo({
                     left: nextScroll,
-                    behavior: "smooth"
+                    behavior: reduceMotion.matches ? "auto" : "smooth"
                 });
                 scheduleAutoplay();
             }, delay);
@@ -170,13 +206,12 @@ if (carouselViewport) {
         };
 
         const snapToNearestCard = () => {
-            const viewportLeft = carouselViewport.getBoundingClientRect().left;
             const currentScroll = carouselViewport.scrollLeft;
             let nearestScroll = currentScroll;
             let nearestDistance = Number.POSITIVE_INFINITY;
 
             for (const card of carouselList.children) {
-                const cardScroll = currentScroll + card.getBoundingClientRect().left - viewportLeft;
+                const cardScroll = getCardScrollPosition(card);
                 const distance = Math.abs(cardScroll - currentScroll);
 
                 if (distance < nearestDistance) {
@@ -234,16 +269,16 @@ if (carouselViewport) {
         };
 
         carouselViewport.addEventListener("pointerdown", (event) => {
-            if (event.pointerType !== "mouse" || event.button !== 0) {
-                return;
-            }
-
             if (animationFrame) {
                 window.cancelAnimationFrame(animationFrame);
                 animationFrame = 0;
             }
             window.clearTimeout(settleTimer);
             carouselViewport.classList.remove("is-settling");
+
+            if (event.pointerType !== "mouse" || event.button !== 0) {
+                return;
+            }
 
             isDragging = true;
             lastPointerX = event.clientX;

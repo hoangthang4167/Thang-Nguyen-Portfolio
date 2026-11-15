@@ -149,3 +149,73 @@
     width: 14px;
     height: 14px;
 }
+
+@media (max-width: 640px) {
+    .services {
+        padding-top: 36px;
+    }
+
+    .services__container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .services__card {
+        min-height: 390px;
+        padding: 22px;
+        border-radius: 28px;
+    }
+
+    .services__card::before {
+        top: 16px;
+        right: 16px;
+        width: 64px;
+        box-shadow:
+            0 0 0 18px var(--service-halo),
+            0 0 0 36px var(--service-halo),
+            0 0 38px 20px var(--service-halo);
+    }
+
+    .services__icon {
+        top: 16px;
+        right: 16px;
+        width: 48px;
+    }
+
+    .services__icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .services__card-title {
+        margin: 78px 0 18px;
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        font-size: clamp(1.65rem, 7vw, 2rem);
+        font-weight: 750;
+        letter-spacing: -0.035em;
+        text-align: left;
+    }
+
+    .services__card-description {
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    .services__social-links {
+        gap: 18px;
+        padding-top: 32px;
+        padding-bottom: 20px;
+    }
+
+    .services__social-link {
+        width: 22px;
+        height: 22px;
+    }
+
+    .services__social-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
